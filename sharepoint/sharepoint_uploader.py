@@ -74,7 +74,6 @@ def upload_to_sharepoint(settings_file, distribution):
         build_date = int(datetime.datetime.now().strftime("%Y%m%d"))
     else:
         build_date = sp.get_new_build_date(distribution=distribution)
-
     all_items = sp.get_list_items(distribution=distribution)
     for item in all_items:
         if item.properties["Title"] == sp.settings.version and item.properties["build_date"] == build_date:
@@ -105,6 +104,7 @@ class SharepointUpload(Downloader):
         )
 
         self.ctx = ClientContext(SHAREPOINT_SITE_URL, context_auth)
+        self.latest_build = ""
 
     def prepare_upload(self, file_path, *remote_path):
         """

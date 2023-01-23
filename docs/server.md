@@ -1,7 +1,9 @@
 In order to upload builds and collect statistics we run Ubuntu server with docker.
 
 ## Create new user
-First a new local user must be created:
+First a new local user must be added:
+=====================================
+
 ~~~
 sudo useradd -m -d /home_local/electron electron
 sudo passwd electron
@@ -61,7 +63,9 @@ sudo -E docker-compose up
 This will start docker compose, pass environment variables from current user and detach from docker.
 
 
-Some docker useful commands
+Some Docker useful commands
+===========================
+
 
 To start a docker
 ```bash
