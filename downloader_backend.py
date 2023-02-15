@@ -250,7 +250,7 @@ class Downloader:
         self.update_installation_history(status="In-Progress", details="Authorizing in SharePoint")
 
         command = "powershell.exe "
-        command += "Connect-PnPOnline -Url https://ansys.sharepoint.com/sites/BetaDownloader -UseWebLogin;"
+        command += "Connect-PnPOnline -Url https://ansys.sharepoint.com/sites/BetaDownloader -Interactive;"
         command += '(Get-PnPListItem -List secret_list -Fields "Title","client_id","client_secret").FieldValues'
         out_str = self.subprocess_call(command, shell=True, popen=True)
 

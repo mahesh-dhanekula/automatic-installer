@@ -64,8 +64,8 @@ This will start docker compose, pass environment variables from current user and
 
 
 Some Docker useful commands
-===========================
 
+===========================
 
 To start a docker
 ```bash
