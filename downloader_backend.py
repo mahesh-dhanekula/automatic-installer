@@ -244,7 +244,7 @@ class Downloader:
         """
         Function that uses PnP to authorize user in SharePoint using Windows account and to get actual client_id and
         client_secret
-        Returns: ctx: authorization context for Office365 library
+        Returns: ctx: authorization context for Office365 library.
 
         """
         self.update_installation_history(status="In-Progress", details="Authorizing in SharePoint")
