@@ -54,7 +54,7 @@ ARTIFACTORY_DICT = {
     "Lebanon": "http://lebartifactory.win.ansys.com:8080/artifactory",
     "Lyon": "http://lyovmartifact.win.ansys.com:8080/artifactory",
     "Otterfing": "http://ottvmartifact.win.ansys.com:8080/artifactory",
-    "Pune": "http://punvmartifact.win.ansys.com:8080/artifactory",
+    "Pune": "http://apac.artifactory.ansys.com:8080/artifactory",
     "Sheffield": "http://shfvmartifact.win.ansys.com:8080/artifactory",
     "SanJose": "http://sjoartsrv01.ansys.com:8080/artifactory",
     "Waterloo": "https://watartifactory.win.ansys.com:8443/artifactory",
